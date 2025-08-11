@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Conecta Bot Conversacional Powered by Rasa</title>
+	<title>Banking Demo Powered by Rasa</title>
 	<link rel="stylesheet" href="./style.css">
 	<script type="module" src="https://unpkg.com/@rasahq/chat-widget-ui/dist/rasa-chatwidget/rasa-chatwidget.esm.js">
 	</script>
@@ -13,23 +13,24 @@
 
 <body>
 	<div class="navbar">
-		<img width="100" src="./logo.png" style="color:white;">
+		<img width="200" src="./logo.png" style="color:white;">
 	</div>
 	<div class="hero">
-		<h1>Habla con tu Asistente Festival AI</h1>
-		<p><strong>Asistente inteligente ,<br>Powered by Rasa</strong></p>
+		<h1>El Festival de Inteligencia Artificial.</h1>
+		<p><strong>Your Intelligent Assistant ,<br>Powered by Rasa</strong></p>
 
 		<div class="content">
 			<p>
 				Es un evento innovador que reúne a empresarios, tecnólogos, profesionales de empresas, y entusiastas de la IA para explorar y experimentar cómo utilizar la inteligencia artificial en el ámbito empresarial, sin importar la función que desempeñen en sus organizaciones.
 			</p>
 			<p>
-				Dentro de este chat conversacional vas a poder realizar actividades como:
+				Dentro de este chat conversacional vas a poder realizar transacciones como:
 				<ul>
-					<li>Reservar un espacio para la hora del almuerzo.</li>
-					<li>Comprar una entrada para el evento Festival AI.</li>
-					<li>Consultas información general sobre el evento.</li>
-					<li>Consultas información sobre presentaciones y charlas.</li>
+					<li>Consulta de información sobre nuestros productos</li>
+					<li>Chequear balance de su cuenta</li>
+					<li>Bloqueo de tarjetas</li>
+					<li>Transferencia de Dinero</li>
+					<li>Añadir y remover beneficiarios</li>
 				</ul>
 			</p>
 			<p>
@@ -37,7 +38,7 @@
 			</p>
 		</div>
 	</div>
-	<rasa-chatbot-widget server-url="https://connecta.quidia.ai" initial-payload="/session_start" widget-title="Chat with me" auto-open="true"><style>:root { --font-family: Graphik_Web }</style>
+	<rasa-chatbot-widget server-url="http://ec2-98-86-106-202.compute-1.amazonaws.com:5005" initial-payload="/session_start" widget-title="Chat with me" auto-open="true"><style>:root { --font-family: Graphik_Web }</style>
 	</rasa-chatbot-widget>
 </body>
 
