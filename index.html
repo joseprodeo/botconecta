@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Banking Demo Powered by Rasa</title>
+	<link rel="stylesheet" href="./style.css">
+	<script type="module" src="https://unpkg.com/@rasahq/chat-widget-ui/dist/rasa-chatwidget/rasa-chatwidget.esm.js">
+	</script>
+	<link rel="stylesheet" href="https://unpkg.com/@rasahq/chat-widget-ui/dist/rasa-chatwidget/rasa-chatwidget.css" />
+</head>
+
+<body>
+	<div class="navbar">
+		<img width="100" src="./logo.png" style="color:white;">
+	</div>
+	<div class="hero">
+		<h1>Habla con tu Asistente Festival AI</h1>
+		<p><strong>Asistente inteligente ,<br>Powered by Rasa</strong></p>
+
+		<div class="content">
+			<p>
+			
+				Nuestra misión es brindar soluciones innovadoras que aseguren tu bienestar y prosperidad.
+				Tu primera opción para proteger y ampliar tu patrimonio. A lo largo de nuestra trayectoria hemos protegido a miles de familias guatemaltecas.
+				La única aseguradora con un seguro de vida que cubre hasta los 100 años.
+			</p>
+			<p>
+				Dentro de este chat conversacional vas a poder realizar actividades como:
+				<ul>
+					<li>Reservar un espacio para la hora del almuerzo.</li>
+					<li>Comprar una entrada para el evento Festival AI.</li>
+					<li>Consultas información general sobre el evento.</li>
+					<li>Consultas información sobre presentaciones y charlas.</li>
+				</ul>
+			</p>
+			<p>
+				Pruebalo ahora!
+			</p>
+		</div>
+	</div>
+	<rasa-chatbot-widget server-url="https://connecta.quidia.ai" initial-payload="/session_start" widget-title="Chat with me" auto-open="true"><style>:root { --font-family: Graphik_Web }</style>
+	</rasa-chatbot-widget>
+</body>
+
+</html>
